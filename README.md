@@ -20,6 +20,7 @@ create an object with:
 
 *idfile (private key user uses to id in remote host)
 
+*host2 (this can be localhost, and the tunel will give you localhost on the remotehost)
 
 Available functions:
 ====================

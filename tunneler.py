@@ -1,13 +1,14 @@
 import commands, os, time
 class Tunnel:
-	def __init__(self, localport, remoteport, sshport, host, user,idfile):
+	def __init__(self, localport, remoteport, sshport, host, user, host2,idfile):
 		self.localport = localport
 		self.remoteport = remoteport
 		self.sshport = sshport
 		self.host = host
 		self.user = user
 		self.idfile = idfile
-		self.command = 'ssh -f ' + self.user+'@'+self.host + ' -L ' + self.localport + ':' + self.host + ':' + self.remoteport + ' -N -p ' + self.sshport + ' -i ' + self.idfile
+		self.host2 = host2
+		self.command = 'ssh -f ' + self.user+'@'+self.host + ' -L ' + self.localport + ':' + self.host2 + ':' + self.remoteport + ' -N -p ' + self.sshport + ' -i ' + self.idfile
 	def checkOpenPort(self):
 		portcheck = 'netstat -a | grep :' + self.localport
 		portcheckout = commands.getoutput(portcheck)
