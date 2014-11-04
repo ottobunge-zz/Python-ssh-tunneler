@@ -1,5 +1,6 @@
 Python-ssh-tunneler
 ===================
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/ottobunge/Python-ssh-tunneler?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Little script to create, detect and kill local ssh tunnels
 
